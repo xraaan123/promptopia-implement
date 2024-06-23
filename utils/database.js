@@ -6,8 +6,7 @@ configDotenv();
 let isConnected = false;
 
 export const connectToDB = async () => {
-  const mongoURI =
-    process.env.MONGODB_URI || "mongodb://localhost:27017/cluster0";
+  const mongoURI = process.env.MONGODB_URI;
 
   mongoose.set("strictQuery", true);
 
