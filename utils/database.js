@@ -6,7 +6,9 @@ configDotenv();
 let isConnected = false;
 
 export const connectToDB = async () => {
-  const MONGODB_URI = process.env.MONGODB_URI;
+  const mongoURI =
+    process.env.MONGODB_URI || "mongodb://localhost:27017/cluster0";
+
   mongoose.set("strictQuery", true);
 
   if (isConnected) {
@@ -15,9 +17,9 @@ export const connectToDB = async () => {
   }
 
   try {
-    console.log("MONGODB_URI: ", MONGODB_URI);
+    console.log("MONGODB_URI: ", mongoURI);
 
-    await mongoose.connect(MONGODB_URI, {
+    await mongoose.connect(mongoURI, {
       dbName: "share-prompt",
       useNewUrlParser: true,
       useUnifiedTopology: true,
