@@ -1,4 +1,7 @@
 import mongoose from "mongoose";
+import { configDotenv } from "dotenv";
+
+configDotenv();
 
 let isConnected = false;
 
@@ -10,7 +13,7 @@ export const connectToDB = async () => {
     return;
   }
 
-  console.log(process.env.MONGODB_URI);
+  console.log("MONGODB_URI: ", process.env.MONGODB_URI);
 
   try {
     await mongoose.connect(process.env.MONGODB_URI.toString(), {
