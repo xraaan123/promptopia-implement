@@ -1,7 +1,5 @@
 # This project is for learning make a Fullstack web application with Next.js
 
-https://project-promptopia-implemented.vercel.app/
-
 ## What I have learned from this project
 
 ```bash
@@ -20,3 +18,9 @@ https://project-promptopia-implemented.vercel.app/
   4. When click on another profile, it will navigate to the clicked profile.
   5. When clikc on hashtag it will search/filter by hashtag.
 ```
+
+## Feel free to visit https://project-promptopia-implemented.vercel.app/ 
+
+## Noted: 
+
+This is learning project so I'm not just copy paste but trying to learn how is actually working.
