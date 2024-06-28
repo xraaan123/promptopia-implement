@@ -18,7 +18,3 @@
   4. When click on another profile, it will navigate to the clicked profile.
   5. When clikc on hashtag it will search/filter by hashtag.
 ```
-
-## What I do next ?
-
-Now I can not deploy via vercel due to MONGODB_URI so I will change database by using firebase instead of using MongoDB.
